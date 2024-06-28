@@ -1,0 +1,93 @@
+header {
+    width: 100%;
+    background-color: #001030;
+    padding: 10px 0; 
+    margin: 0;
+    
+}
+
+header .container-xxl {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000;
+    background-color: #001030;
+    height: 100px;
+    border-radius: 20px;
+    
+}
+
+.navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.navbar-custom a.active {
+    color: #2C04FF;
+}
+
+.navbar-custom a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-list a {
+    display: block;
+    padding: 1em;
+}
+
+.nav-list a:hover {
+    color: #2C04FF;
+}
+
+.nav-btn {
+    display: none;
+}
+
+@media (max-width:1000px) {
+    .nav-btn {
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+        border: none;
+        background-color: #001030;
+        color: white;
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: flex;
+        ustify-content: center;
+        align-items: center;
+    }
+
+
+    .drop:hover .nav-list {
+        display: block;
+        width: 50%;
+        position: absolute;
+        right: 1px;
+        background-color: #000a1d;
+    }
+
+    .navbar-custom {
+        display: flex;
+        justify-content: space-between;
+        /* Распределение элементов по ширине */
+        align-items: center;
+        /* Выравнивание элементов по вертикали */
+        padding: 20px 0;
+        /* Отступы сверху и снизу */
+    }
+
+}

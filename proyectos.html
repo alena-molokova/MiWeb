@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Innovación Visual</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="static/styles/navbar.css">
+    <link rel="stylesheet" href="static/styles/footer.css">
+
+</head>
+
+<body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="padding: 10px; background-color: #f3f3f3;">
+                <div class="modal-header" style="margin: 15px 0;">
+                    <h3 class="modal-title" id="exampleModalLabel">Deje sus datos de contacto y nos pondremos en
+                        contacto con usted en breve</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="popupForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <div class="text-center" style="margin: 20px;">
+                            <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container-xxl">
+            <div class="navbar-custom">
+                <a href="index.html"><img src="static/images/logo.svg" alt="Estudio Innovación Visual"></a>
+                <div class="drop">
+                    <button class="nav-btn">&#9776;</button>
+                    <div class="nav-list">
+                        <a href="proyectos.html" class="active">Proyectos</a>
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="contactos.html">Contactos</a>
+                    </div>
+                </div>
+                <button class="custom-button" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Discutir el proyecto</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-1" style="margin-top: 150px;">
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div>
+                            <h1 style="margin-bottom: 50px;">Conozca nuestros mejores trabajos</h1>
+                            <p style="margin-bottom: 50px;">Creamos una herramienta no solo visualmente atractiva, sino
+                                también efectiva, cuidadosamente elaborada en cada paso, desde la estructura hasta la
+                                maquetación. Durante el proceso, coordinamos cada etapa contigo y avanzamos juntos.
+                            </p>
+                            <button class="custom-button" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Discutir el proyecto</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="w-100" src="static/images/img.svg" alt="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-xxl">
+            <a href="index.html"><img src="static/images/logo.svg" alt="logo"></a>
+            <div class="contactos">
+                <a href="tel:+5491127649049" target="_blank">+5491127649049</a>
+                <a href="mailto: alena.molokova@davinci.edu.ar" target="_blank">alena.molokova@davinci.edu.ar</a>
+                <a href="https://wa.me/+5491127649049" target="_blank">WhatsApp</a>
+                <a href="https://t.me/AlenaWebDesigner" target="_blank">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
