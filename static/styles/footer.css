@@ -15,7 +15,34 @@ footer .contactos {
     padding-bottom: 80px;
 }
 
-footer .contactos a{
+footer .contactos a {
     text-decoration: none;
     color: white;
+}
+
+@media (max-wigth: 580px) {
+
+    footer .container-xxl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .container-xxl img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer .contactos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .contactos a {
+        margin: 5px 0;
+        text-decoration: none;
+    }
 }
