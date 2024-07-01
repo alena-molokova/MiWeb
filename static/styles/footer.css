@@ -20,19 +20,20 @@ footer .contactos a {
     color: white;
 }
 
-@media (max-wigth: 580px) {
-
+@media (max-width: 768px) {
     footer .container-xxl {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding-top: 30px;
     }
 
-    footer .container-xxl img {
-        width: 100%;
-        max-width: 100%;
+    footer img {
+        width: 70%;
+        max-width: 70%;
         height: auto;
+        margin: 20px 0;
     }
 
     footer .contactos {
@@ -44,5 +45,6 @@ footer .contactos a {
     footer .contactos a {
         margin: 5px 0;
         text-decoration: none;
+        font-size: 20px;
     }
 }
