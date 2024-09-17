@@ -14,54 +14,7 @@
 </head>
 
 <body>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content" style="padding: 10px; background-color: #f3f3f3;">
-                <div class="modal-header" style="margin: 15px 0;">
-                    <h3 class="modal-title" id="exampleModalLabel">Deje sus datos de contacto y nos pondremos en
-                        contacto con usted en breve</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="popupForm">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="3" required></textarea>
-                        </div>
-                        <div class="text-center" style="margin: 20px;">
-                            <button type="submit" class="btn btn-primary">Enviar solicitud</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <header>
-        <div class="container-xxl">
-            <div class="navbar-custom">
-                <a href="index.html"><img src="static/images/logo.svg" alt="Estudio Innovación Visual"></a>
-                <div class="drop">
-                    <button class="nav-btn">&#9776;</button>
-                    <div class="nav-list">
-                        <a href="proyectos.html">Proyectos</a>
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="contactos.html" class="active">Contactos</a>
-                    </div>
-                </div>
-                <button class="custom-button" type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">Discutir el proyecto</button>
-            </div>
-        </div>
-    </header>
+    <?php include_once('header.php'); ?>
 
     <main>
         <section class="section">
@@ -122,18 +75,8 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container-xxl">
-            <a href="index.html"><img src="static/images/logo.svg" alt="logo"></a>
-            <div class="contactos">
-                <a href="tel:+5491127649049" target="_blank">+5491127649049</a>
-                <a href="mailto: alena.molokova@davinci.edu.ar" target="_blank">alena.molokova@davinci.edu.ar</a>
-                <a href="https://wa.me/+5491127649049" target="_blank">WhatsApp</a>
-                <a href="https://t.me/AlenaWebDesigner" target="_blank">Telegram</a>
-            </div>
-        </div>
-    </footer>
-
+    <?php include_once('footer.php'); ?>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
